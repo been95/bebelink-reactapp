@@ -1,0 +1,138 @@
+a {
+  text-decoration: none;
+}
+/*INNER*/
+.inner {
+  width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+/*HEADER*/
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+}
+header >  .inner {
+  height: 120px;
+}
+.logo {
+  height: 75px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+h1 span {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.menu {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: flex;
+}
+.menu ul {
+  display: flex;
+}
+.menu li {
+  position: relative;
+}
+.menu li::before {
+  content: "";
+  width: 1px;
+  height: 12px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.menu li:first-child::before {
+  display: none;
+}
+.menu li a {
+  padding: 11px 16px;
+  display: block;
+  font-size: 13px;
+  color: #656565;
+}
+.menu li a:hover {
+  color: #000;
+}
+.search {
+  position: relative;
+  height: 34px;
+}
+.search input {
+  width: 36px;
+  height: inherit;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  color: #777;
+  font-size: 12px;
+  transition: width 0.4s;
+}
+.search input:focus {
+  width: 190px;
+  border-color: #fe9d90;
+}
+.main__menu {
+  position: absolute;
+  top:40px;
+  right: 0;
+  z-index: 1;
+  display: flex;
+}
+.item__name {
+  padding: 10px 20px 34px 20px;
+  font-size: 13px;
+}
+.main__menu .item:hover .item__name {
+  background-color: #fff;
+  color: #777;
+  border-radius: 6px 6px 0 0;
+}
+.item__contents {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  display: none;
+}
+.item:hover .item__contents {
+  display: block;
+}
+.contents__menu {
+  background: #fff;
+}
+.contents__menu .inner {
+  padding: 20px 0;
+  display: flex;
+}
+.contents__menu .inner> li {
+  width: 220px;
+}
+.contents__menu .inner > li h4 {
+  padding: 3px 0 12px 0;
+  font-size: 14px;
+  color: #333;
+}
+.contents__menu .inner > li ul li {
+  padding: 5px 0;
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+}
+.contents__menu .inner > li ul li:hover {
+  color: #333;
+}
+

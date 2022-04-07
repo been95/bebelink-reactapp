@@ -1,0 +1,26 @@
+/*VISUAL*/
+.visual {
+    background-color: #ffbbb2;
+}
+.visual .inner {
+    height: 1080px;
+}
+.visual .title {
+    position: absolute;
+    top: 370px;
+    color: #fff;
+    left: -200px;
+}
+.visual .title h3 {
+    font-size: 80px;
+    width: 650px;
+}
+.visual .title p {
+    font-size: 18px;
+    margin-top: -49px;
+}
+.visual .cup1.image {
+    width: 827px;
+    position: absolute;
+    right: -168px;
+}
